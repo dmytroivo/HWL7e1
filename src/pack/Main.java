@@ -1,9 +1,5 @@
 package pack;
 
-/*Написать код для многопоточного подсчета суммы элементов
-массива целых чисел. Сравнить скорость подсчета с простым
-алгоритмом.
-  */
 
 import java.util.Random;
 
@@ -35,7 +31,7 @@ public class Main {
 		System.out.println(e);
 	}
     long time2=System.currentTimeMillis();
-	System.out.printf("%d потоков: сумма= %,d / %tL ms\n",qThread,ArrayThread.getQSum(),time2-time1);
+	System.out.printf("%d РїРѕС‚РѕРє: СЃСѓРјРјР°= %,d / %tL ms\n",qThread,ArrayThread.getQSum(),time2-time1);
     
 	
 	time1=System.currentTimeMillis();	
@@ -43,7 +39,7 @@ public class Main {
 		sum+=x;
 	}
 	time2=System.currentTimeMillis();
-	System.out.printf("1 поток: сумма= %,d / %tL ms\n",sum,time2-time1);
+	System.out.printf("1 РїРѕС‚РѕРє: СЃСѓРјРјР°= %,d / %tL ms\n",sum,time2-time1);
 	}
 
 }
